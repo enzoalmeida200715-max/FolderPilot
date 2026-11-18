@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "folderpilot"
+version = "0.1.0"
+description = "Offline file organisation with preview and undo"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "FolderPilot contributors"}]
+dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Environment :: Win32 (MS Windows)",
+  "Programming Language :: Python :: 3",
+  "Topic :: Desktop Environment :: File Managers",
+]
+
+[project.scripts]
+folderpilot = "folderpilot.cli:main"
+
+[tool.setuptools]
+packages = ["folderpilot"]
